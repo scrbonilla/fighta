@@ -35,6 +35,12 @@ gem 'youtube_it', '~> 2.4.2'
 # Use
 gem 'bootstrap-sass', '~> 3.2.0.2'
 
+# Use
+gem 'figaro'
+
+# Use for comments
+gem 'commontator', '~> 4.8.0'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -43,4 +49,6 @@ gem 'bootstrap-sass', '~> 3.2.0.2'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+group :development, :test do
+  gem "pry-rails"
+end
