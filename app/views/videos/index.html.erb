@@ -1,9 +1,12 @@
 <div class="jumbotron">
   <div class="container">
-    <h1>Share your videos with the world!</h1>
-    <p>Click the button below to share your video from YouTube.</p>
+    <h1>You know a <b>Legendary Fight?</b></h1>
+    <h1>Share it with the World!</h1>
+    <p>We all get to Vote for Legendary Fight of the Week</p>
     <p>
-      <%= link_to 'Add video now!', new_video_path, class: 'btn btn-primary btn-lg' %>
+      <%= link_to 'Add video now!', new_video_path, class: 'btn btn-primary btn-sm homepage_btn' %>
+      <%= link_to 'Back to homepage', root_path, class: 'btn btn-primary btn-sm homepage_btn' %>
+      <%= link_to "Find a youtube video", "https://www.youtube.com/", :target => "_blank", class: "btn btn-primary btn-sm homepage_btn" %>
     </p>
 
   </div>
@@ -11,7 +14,7 @@
 
 <% if @videos.any? %>
   <div class="container">
-    <h1>Latest videos</h1>
+    <h1>Recently Added</h1>
 
     <div id="player-wrapper"></div>
 

@@ -1,4 +1,4 @@
-#FightApp
+#Fighta
 GA WDI DC October 2014 - Project 1-version 1.0
 
 ##Overview
