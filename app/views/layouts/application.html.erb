@@ -3,7 +3,7 @@
 <head>
 
   <title>Fighta</title>
-
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
   <%= csrf_meta_tags %>
   <script src="https://www.google.com/jsapi"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
@@ -14,12 +14,15 @@
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>">
      <!--  <button type="button" class="notice" data-dismiss="alert">&times;</button> -->
-      <%= value %>
+      <%= key %>
     </div>
   <% end %>
 </div>
 <%= render 'shared/signout' %>
 <%= yield %>
+<footer>
+
+</footer>
 
 </body>
 </html>

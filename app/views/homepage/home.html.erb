@@ -1,11 +1,14 @@
-<div class="jumbotron">
-    <div class="container">
-        <% unless signed_in? %>
-            <%= link_to 'Log In', login_path %>
+
+<div class="container">
+    <% unless signed_in? %>
+        <%= link_to 'Log In', login_path %>
             Or
-            <%= link_to 'Sign up', signup_path %>
-        <% end %>
-            <%= image_tag("onepiece.jpg", :alt => "onepiece") %>
+        <%= link_to 'Sign up', signup_path %>
+    <% end %>
+
+        <div class="homepic">
+            <div class="row">
+            <%= image_tag("onepiece.jpg", :alt => "onepiece", :class => "one") %>
+        </div>
     </div>
 </div>
-
