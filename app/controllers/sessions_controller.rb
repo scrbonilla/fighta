@@ -10,13 +10,14 @@ class SessionsController < ApplicationController
             flash[:notice] = "Logged in!"
             redirect_back_or videos_path
         else
-            flash.now[:error] = "Email or password is invalid"
+            flash[:error] = "Email or password is invalid"
             redirect_to login_path
         end
     end
 
     def destroy
         sign_out
-        redirect_to login_path, notice: 'Logged out'
+        flash[:notice] = "Logged out"
+        redirect_to root_url
     end
 end
