@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+  div.row img{width:100%;}
+  .log_head{background:#5ed6df;width:100%; color:white; padding:10px;border-bottom:3px solid orange;  }
+  .container{width:800px; margin:0 auto;}
+  .video{width:300px;display:inline-block;border:1px solid #ccc;}
+
+  </style>
 
   <title>Fighta</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -13,8 +20,8 @@
 <div class="container">
   <% flash.each do |key, value| %>
     <div class="alert alert-<%= key %>">
-     <!--  <button type="button" class="notice" data-dismiss="alert">&times;</button> -->
-      <%= key %>
+      <button type="button" class="notice" data-dismiss="alert">&times;</button>
+      <%= value %>
     </div>
   <% end %>
 </div>

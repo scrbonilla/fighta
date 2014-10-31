@@ -4,7 +4,6 @@
     <p>Click the button below to share your video from YouTube.</p>
     <p>
       <%= link_to 'Add video now!', new_video_path, class: 'btn btn-primary btn-lg' %>
-      <%= link(:url => 'https://www.youtube.com/', :text => 'Go find a video'%>
     </p>
 
   </div>
@@ -17,11 +16,11 @@
     <div id="player-wrapper"></div>
 
     <% @videos.in_groups_of(3) do |group| %>
-      <div class="row">
+      <div class="row ">
         <% group.each do |video| %>
           <% if video %>
-            <div class="col-md-4">
-              <div class="yt_video thumbnail">
+            <div class="video">
+              <div class="">
                 <%= link_to video.link, :target => "_blank" do %> <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title, class: 'yt_preview img-rounded', :"data-uid" => video.uid %> <% end %>
 
                 <div class="caption">
