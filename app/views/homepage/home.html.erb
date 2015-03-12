@@ -1,14 +1,20 @@
-
-<div id="homepage">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
     <% unless signed_in? %>
-        <%= link_to 'Log In', login_path %>
-            Or
-        <%= link_to 'Sign up', signup_path %>
-        <%= link_to 'homepage', videos_path %>
+        <li><%= link_to 'Log In', login_path %></li>
+        <li><%= link_to 'Sign up', signup_path %></li>
+        <li><%= link_to 'homepage', videos_path %></li>
     <% end %>
-        <div class="homepic">
-            <div class="row">
-                <%= image_tag("onepiece.jpg", :alt => "onepiece", :class => "one") %>
-            </div>
-        </div>
+  </div>
+</nav>
+
+
+<div class="row" id="rowBackgroundImg">
+    <div class="span6" id="backgroundImg">
+    <!-- background image is set in CSS -->
+    </div>
 </div>
+
+
+
+
