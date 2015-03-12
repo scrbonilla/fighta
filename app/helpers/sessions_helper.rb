@@ -47,7 +47,7 @@ module SessionsHelper
     def require_signin
         unless signed_in?
             store_location
-            flash[:notice] = "Please sign in."
+            flash[:notice] = "Please sign in"
             redirect_to login_url
         end
     end
