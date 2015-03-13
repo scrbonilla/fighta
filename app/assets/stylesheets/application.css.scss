@@ -14,22 +14,66 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  padding-top: 60px;
+}
+
+
+
 nav li {
 
     float: left;
     margin-top: 10px;
+    margin-bottom: 10px;
     display: inline;
     border-right: thin solid red;
     padding: 5px 5px 5px 5px;
 
 }
+
+#nixborder {
+    border-right: none;
+
+}
 #backgroundImg
 {
     background: url('onepiece.jpg') no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 650px;
     background-position: center;
     vertical-align: top;
     background-position: top;
     background-attachment: fixed;
+}
+
+/* footer */
+
+footer {
+  margin-top: 60px;
+  padding-top: 5px;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer small {
+  float: left;
+  padding-top: 20px;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  padding-top: 12px;
 }
