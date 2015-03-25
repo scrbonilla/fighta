@@ -1,0 +1,13 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <% unless signed_in? %>
+        <nav>
+            <ul class="nav navbar-nav navbar-left">
+                <li><%= link_to 'Log In', login_path %></li>
+                <li><%= link_to 'Sign up', signup_path %></li>
+                <li id="nixborder"><%= link_to 'homepage', videos_path %></li>
+            </ul>
+        </nav>
+    <% end %>
+  </div>
+</header>
