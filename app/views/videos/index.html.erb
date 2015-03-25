@@ -22,8 +22,8 @@
       <div class="row ">
         <% group.each do |video| %>
           <% if video %>
-            <div class="video">
-              <div class="">
+            <div class="video col-md-4">
+
                 <%= link_to video.link, :target => "_blank" do %> <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title, class: 'yt_preview img-rounded', :"data-uid" => video.uid %> <% end %>
 
                 <div class="caption">
@@ -35,7 +35,7 @@
                     <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= video.dislikes %>
                   </p>
                 </div>
-              </div>
+
             </div>
           <% end %>
         <% end %>

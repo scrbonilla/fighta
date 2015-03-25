@@ -10,53 +10,70 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
  */
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
-// @import "bootstrap";
-div.row img {
-    width: 100%;
+body {
+  padding-top: 60px;
 }
-.log_head {
-    background: #5ed6df;
-    width: 100%;
-    color: white;
-    padding: 10px;
-    border-bottom: 3px solid orange;
+
+
+
+nav li {
+
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline;
+    border-right: thin solid red;
+    padding: 5px 5px 5px 5px;
+
 }
-.container {
-    width: 800px;
-    margin: 0 auto;
+
+#nixborder {
+    border-right: none;
+
 }
-.video {
-    width: 200px;
-    display: inline-block;
-    border: 1px solid #ccc;
+#backgroundImg
+{
+    background: url('onepiece.jpg') no-repeat;
+    background-size: cover;
+    height: 650px;
+    background-position: center;
+    vertical-align: top;
+    background-position: top;
+    background-attachment: fixed;
 }
-.right {
-    border-bottom: 2px solid orange;
-    padding-left: 20px;
+
+/* footer */
+
+footer {
+  margin-top: 60px;
+  padding-top: 5px;
+  color: #777;
 }
-#logout {
-    color: red;
-    border: 0;
-    background: none;
+
+footer a {
+  color: #555;
 }
-.container>h1 {
-    font-size: 30pt;
-    font-family: helveticaNeue;
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
 }
-.container>p {
-    font-size: 15pt!important;
+
+footer small {
+  float: left;
+  padding-top: 20px;
 }
-.homepage_btn {
-    margin-top: 0;
-    transition: margin-top .5s;
+
+footer ul {
+  float: right;
+  list-style: none;
 }
-.homepage_btn:hover {
-    margin-top: -10px;
-}
-#homepage {
-    background-color: orange;
+
+footer ul li {
+  float: left;
+  padding-top: 12px;
 }
