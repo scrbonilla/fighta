@@ -11,7 +11,7 @@ This App will weed out all the so-so fight clips leaving only the best of the be
 
 ##Dependencies/Technology Used
 
-+ Boostrap
++ twitterBoostrap
 + Ruby 2.1.2
 + Ruby on Rails 4.1.6
 + PostgreSQL Database
