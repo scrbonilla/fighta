@@ -40,10 +40,9 @@ gem 'commontator', '~> 4.8.0'
 
 gem 'rspec'
 
-group :production do #heroku
-    gem "rails_12factor"
-end
+gem 'rails_12factor', group: :production
 
+ruby "2.1.2"
 # Use unicorn as the app server
 # gem 'unicorn'
 
