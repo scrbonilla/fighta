@@ -11,6 +11,7 @@ This App will weed out all the so-so fight clips leaving only the best of the be
 
 ##Dependencies/Technology Used
 
++ Boostrap
 + Ruby 2.1.2
 + Ruby on Rails 4.1.6
 + PostgreSQL Database
@@ -38,6 +39,8 @@ Phase II - Implement "User can upload", video's into "Amateur Pool" for a chance
 
  relevant link:
 
+ [View Website](http://www.)
+
 [ERD for FightApp](https://www.lucidchart.com/invitations/accept/75f6d466-50c3-474d-9c3f-f86340d8f0f0)
 
 visuals:
@@ -49,6 +52,8 @@ visuals:
 [Page2](http://i.imgur.com/gCZVaNn.jpg)
 
 [Champion](http://i.imgur.com/mdpj27n.jpg)
+
+
 
 
 
