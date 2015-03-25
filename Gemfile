@@ -38,6 +38,8 @@ gem 'bootstrap-sass', '~> 3.3.0.1'
 # Use for comments
 gem 'commontator', '~> 4.8.0'
 
+gem 'rspec'
+
 group :production do #heroku
     gem "rails_12factor"
 end
