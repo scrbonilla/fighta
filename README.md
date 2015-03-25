@@ -39,7 +39,7 @@ Phase II - Implement "User can upload", video's into "Amateur Pool" for a chance
 
  relevant link:
 
- [View Website](http://www.)
+ [View Website](http://www.fighta-rails.com)
 
 [ERD for FightApp](https://www.lucidchart.com/invitations/accept/75f6d466-50c3-474d-9c3f-f86340d8f0f0)
 
