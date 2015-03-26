@@ -40,9 +40,3 @@ $(window).on 'resize', ->
   player = $('#ytPlayer')
   player.height(player.width() / 1.777777777) if player.size() > 0
 return
-
-  $(window).bindWithDelay('resize', ->
-  player = $('#ytPlayer')
-  player.height(player.width() / 1.777777777) if player.size() > 0
-return
-, 500)
