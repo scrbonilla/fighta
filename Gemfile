@@ -43,7 +43,9 @@ gem 'commontator', '~> 4.8.0'
 
 gem 'rspec'
 
-gem 'rails_12factor', group: :production
+group :production do
+  gem 'rails_12factor'
+end
 
 ruby "2.1.2"
 # Use unicorn as the app server
