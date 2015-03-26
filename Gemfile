@@ -35,6 +35,9 @@ gem 'youtube_it', '~> 2.4.2'
 # Use
 gem 'bootstrap-sass', '~> 3.3.0.1'
 
+# adds proper vendor prefixes when precompiling
+gem 'autoprefixer-rails'
+
 # Use for comments
 gem 'commontator', '~> 4.8.0'
 
