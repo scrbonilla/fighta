@@ -11,6 +11,7 @@
  * file per style scope.
  *
  *=require_self
+ *=require_tree .
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -38,7 +39,8 @@ nav li {
 }
 #backgroundImg
 {
-    background-image: image-url('onepiece.jpg') no-repeat;
+    background-image: url(<%= asset_path 'image.png' %>);
+    background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
     background-position: center;
