@@ -14,8 +14,8 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets";
 @import "bootstrap";
+@import "bootstrap-sprockets";
 
 
 
@@ -40,7 +40,8 @@ nav li {
 
 #backgroundImg
 {
-    background: url('onepiece.jpg') center center fixed;
+    background-image: asset-url('onepiece.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 650px;
