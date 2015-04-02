@@ -40,7 +40,7 @@ nav li {
 
 #backgroundImg
 {
-    background-image: asset-url('onepiece.jpg');
+    background-image: url(image-path('onepiece.jpg'));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,6 +50,7 @@ nav li {
 /* footer */
 
 footer {
+  float: bottom;
   margin-top: 60px;
   padding-top: 5px;
   color: #777;
