@@ -2,10 +2,6 @@ class User < ActiveRecord::Base
   before_create :create_remember_token
   before_save :normalize_fields
   acts_as_commontator
-  # Validate name:
-  # validates :name,
-  #   presence: true,
-  #   length: { maximum: 50 }
 
   # Validate email address:
   validates :email,
@@ -14,8 +10,7 @@ class User < ActiveRecord::Base
     format: { with: /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i }
 
   # Validate password length:
-  validates :password,
-    length: { minimum: 8 }
+  validates :password,length: { minimum: 6 }
 
   # Secure password features:
   has_secure_password
