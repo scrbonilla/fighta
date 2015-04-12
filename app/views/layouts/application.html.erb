@@ -21,12 +21,15 @@
     </head>
     <body>
 
-        <%= render 'shared/signout' %>
-    <div class="container-fluid">
+    <div id="page">
+        <%= render 'shared/flash' %>
         <%= render 'layouts/header' %>
-    <%= yield %>
-        <%= render 'layouts/footer' %>
+      <div id="main">
+        <%= yield %>
+      </div>
     </div>
+        <%= render 'layouts/footer' %>
+
      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
