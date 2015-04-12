@@ -1,20 +1,15 @@
 <div class="jumbotron">
-  <div class="container">
-    <h1>You know a <b>Legendary Fight?</b></h1>
-    <h1>Share it with the World!</h1>
-    <p>We all get to Vote for Legendary Fight of the Week</p>
-    <p>
-      <%= link_to 'Add video now!', new_video_path, class: 'btn btn-primary btn-sm homepage_btn' %>
-      <%= link_to 'Back to homepage', root_path, class: 'btn btn-primary btn-sm homepage_btn' %>
-      <%= link_to "Find a youtube video", "https://www.youtube.com/", :target => "_blank", class: "btn btn-primary btn-sm homepage_btn" %>
-    </p>
+  <div class="bruce">
+
+
 
   </div>
 </div>
 
 <% if @videos.any? %>
-  <div class="container">
-    <h1>Recently Added</h1>
+  <div class="container" id="videopool">
+
+    <h2>Which Fight is King?</h2>
 
     <div id="player-wrapper"></div>
 
@@ -22,21 +17,27 @@
       <div class="row ">
         <% group.each do |video| %>
           <% if video %>
-            <div class="video col-md-4">
+            <div class="col-xs-6 col-md-3">
 
-                <%= link_to video.link, :target => "_blank" do %> <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title, class: 'yt_preview img-rounded', :"data-uid" => video.uid %> <% end %>
+                <div ="preview">
+                  <%= link_to video.link, :target => "_blank" do %>
+                  <%= image_tag "https://img.youtube.com/vi/#{video.uid}/mqdefault.jpg", alt: video.title, class: 'yt_preview img-responsive', :"data-uid" => video.uid %> <% end %>
+                </div>
 
                 <div class="caption">
                   <h5><%= video.title %></h5>
-                  <p>Author: <b><%= video.author %></b></p>
-                  <p>Duration: <b><%= video.duration %></b></p>
-                  <p>
-                    <span class="glyphicon glyphicon glyphicon-thumbs-up"></span> <%= video.likes %>
-                    <span class="glyphicon glyphicon glyphicon-thumbs-down"></span> <%= video.dislikes %>
-                  </p>
+                  <p class="captP">Uploaded by: <b><%= video.author %></b></p>
+                  <button type="button" class="btn btn-default" id="glyphi" aria-label="Left Align">
+                    <span class="glyphicon glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <%= video.likes %>
+                  </button>
+                  <button type="button" class="btn btn-default" id="glyphi" aria-label="Left Align">
+
+                  <span class="glyphicon glyphicon glyphicon-thumbs-down" aria-hidden="true"></span> <%= video.dislikes %>
+                  </button>
                 </div>
 
             </div>
+            <div style="clear:right;"></div>
           <% end %>
         <% end %>
       </div>

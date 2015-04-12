@@ -14,50 +14,71 @@
  *= require_self
  */
 
-@import "bootstrap";
 @import "bootstrap-sprockets";
+@import "bootstrap";
 
 
+/* Import the fonts */
 
-body {
-  padding-top: 60px;
+html, body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
 }
-
-
-nav li {
-
-    float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: inline;
-    border-right: thin solid red;
-    padding: 5px 5px 5px 5px;
+#page {
+  min-height: 100%;
+}
+#main {
+  overflow: visible;
+}
+p {
+  padding: 0 0 1em;
+}
+h1, h2, h3, h4, h5, h6 {
+  padding: 0 0 0.4em;
+}
+h2{
+  text-align: center;
+}
+h1.formTitle {
+  text-align: center;
+}
+p.lastF {
+  margin-bottom: 5px;
 }
 
 #nixborder {
     border-right: none;
 }
 
-#backgroundImg
-{
-    background-image: url(image-path('onepiece.jpg'));
+#backgroundImg {
+    background-image: url(image-path('Bruce-Lee.jpg'));
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 650px;
+    background-size: contain;
+    height: 350px;
+    margin: 40px auto;
 }
+
 
 /* footer */
 
 footer {
-  float: bottom;
-  margin-top: 60px;
-  padding-top: 5px;
-  color: #777;
+  background-color: black;
+  clear: both;
+  height: 60px;
+  margin-top: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+
 }
 
+
+
 footer a {
-  color: #555;
+  text-decoration: none;
+  color: #a6adb8;
 }
 
 footer a:hover {
@@ -65,17 +86,111 @@ footer a:hover {
   text-decoration: none;
 }
 
-footer small {
+small {
   float: left;
-  padding-top: 20px;
+  margin: 17px 0 0 20px;
+  color: #885324;
+
+
 }
 
 footer ul {
   float: right;
   list-style: none;
+
+}
+footer ul li{
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
-footer ul li {
+header{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 60px;
+
+}
+ul li {
+  margin: 0 auto;
+  display: inline;
+  border-right: thin solid red;
+}
+#topnav {
+  margin: 5px auto;
+}
+
+#topnav a{
+  padding-bottom: 0;
+  padding-top: 0;
+}
+#lowernav{
+  margin: 17px 20px 0 0;
+  padding: 0;
+
+}
+.navbar {
+  margin-bottom: 0px;
+}
+div.alert{
+  padding: 0;
+  margin-bottom: 0;
+}
+div.jumbotron{
+  width: 50% ;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 0;
+
+}
+div.bruce{
+  background-image: url(image-path('Bruce-Lee.jpg'));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+}
+div#videopool{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 7px;
+  border-left: 2px solid #302E38;
+  border-right: 2px solid #302E38;
+  outline: solid 4px #dadada;
+  box-shadow:
+    0 0 0 5px hsl(0, 0%, 80%)
+}
+img.yt_preview{
+  padding: 5px;
+  border: medium solid black;
+}
+iframe{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
+div.col-xs-6{
+  padding: 0 5px 0 5px;
+  position: relative;
+  left: 100px;
+  margin-bottom: 10px;
+}
+#glyphi{
+  padding: 1px 5px;
+  margin-bottom: 3px;
+  border-radius: 20%;
   float: left;
-  padding-top: 12px;
+}
+// div.main{
+//   position: relative;
+// }
+// p.captP{
+//   display: inline-block;
+// }
+div.row{
+  margin: 0 auto;
 }

@@ -7,11 +7,10 @@ class SessionsController < ApplicationController
         user = User.find_by_email(params[:session][:email].downcase)
         if user && user.authenticate(params[:session][:password])
             sign_in user
-            flash[:notice] = "Logged in!"
             redirect_back_or videos_path
         else
-            flash[:error] = "Email or password is invalid"
-            redirect_to login_path
+            flash.now[:danger] = "Email or password is invalid"
+            render 'new'
         end
     end
 
